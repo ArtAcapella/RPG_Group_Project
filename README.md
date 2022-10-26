@@ -19,5 +19,5 @@ Documentation:
 
 ![Class Diagram](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Class%20Diagram%20Group%20Project.jpg?raw=true)
 
-## Hacking Diagram
-![Hacking Diagram]()
+## Hacking Flowchart
+![Hacking Flowchart](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/HackingFlowchart.jpg?raw=true)
