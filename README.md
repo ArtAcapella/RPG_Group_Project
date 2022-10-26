@@ -10,6 +10,13 @@ Traditional RPG mechanics will also be included! choices, branching narratives, 
 
 
 ## Documentation: 
+Test Builds:
+Minigame:
+https://replit.com/@henryD8/CP2077-Hacking#Main.java
+Combat Model:
+https://replit.com/@henryD8/ZaiCombatTest#Main.java
+Character Creation:
+https://replit.com/@henryD8/CharacterBuildingBetaPhase#Main.java
 
 ## Logic Flow Diagram:
 
