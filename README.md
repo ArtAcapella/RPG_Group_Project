@@ -11,13 +11,13 @@ Traditional RPG mechanics will also be included! choices, branching narratives, 
 
 ## Documentation: 
 
-## Logic Flow Diagram
+## Logic Flow Diagram:
 
 ![Logic Flow Diagram](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Logic%20Flow%20Diagram.jpg?raw=true)
 
-## Class Diagram
+## Class Diagram:
 
 ![Class Diagram](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Class%20Diagram%20Group%20Project.jpg?raw=true)
 
-## Hacking Flowchart
+## Hacking Flowchart:
 ![Hacking Flowchart](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/HackingFlowchart.jpg?raw=true)
