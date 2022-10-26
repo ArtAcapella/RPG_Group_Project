@@ -9,7 +9,7 @@ Traditional RPG mechanics will also be included! choices, branching narratives, 
 ![image](https://user-images.githubusercontent.com/111773778/194082045-cb49db3f-09c2-40eb-9f95-8fe23d39125e.png)
 
 
-Documentation: 
+## Documentation: 
 
 ## Logic Flow Diagram
 
