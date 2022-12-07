@@ -20,7 +20,7 @@ https://replit.com/@henryD8/CharacterBuildingBetaPhase#Main.java
 
 ## Logic Flow Diagram:
 
-![Logic Flow Diagram](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Logic%20Flow%20Diagram.jpg?raw=true)
+![Logic Flow Diagram](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/MainGame.drawio.png?raw=true)
 
 ## Class Diagram:
 
