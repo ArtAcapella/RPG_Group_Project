@@ -24,7 +24,7 @@ https://replit.com/@henryD8/CharacterBuildingBetaPhase#Main.java
 
 ## Class Diagram:
 
-![Class Diagram](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Class%20Diagram%20Group%20Project.jpg?raw=true)
+![Class Diagram](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Class%20Diagram%20Group%20Project.drawio.png?raw=true)
 
 ## Hacking Flowchart:
 ![Hacking Flowchart](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/HackingFlowchart.jpg?raw=true)
