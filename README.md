@@ -8,6 +8,7 @@ Traditional RPG mechanics will also be included! choices, branching narratives, 
 ![image](https://user-images.githubusercontent.com/111773778/194080799-3e374537-3adb-49a0-a71e-6b96d9c2d959.png)
 ![image](https://user-images.githubusercontent.com/111773778/194082045-cb49db3f-09c2-40eb-9f95-8fe23d39125e.png)
 
+[Group Doc](https://docs.google.com/document/d/16o9tm4EJEJgIJ_SVGlFb9HzssX2HX6fr_Upzf-av26Q/edit#heading=h.8u4cuzrt53ul)
 
 ## Documentation: 
 Test Builds:
