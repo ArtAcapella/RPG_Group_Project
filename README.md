@@ -32,3 +32,6 @@ https://replit.com/@henryD8/CharacterBuildingBetaPhase#Main.java
 
 ## Code:
 [Source Code](https://github.com/ArtAcapella/RPG_Group_Project/tree/main/src)
+
+## Gantt Chart
+https://docs.google.com/spreadsheets/d/1J6GKBTyqIrBM73ZpL0BXzlJh03pcNf9Ylj9XMmmKJmw/edit?usp=sharing
