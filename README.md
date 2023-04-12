@@ -10,6 +10,12 @@ Traditional RPG mechanics will also be included! choices, branching narratives, 
 
 [Group Document](https://docs.google.com/document/d/16o9tm4EJEJgIJ_SVGlFb9HzssX2HX6fr_Upzf-av26Q/edit#heading=h.8u4cuzrt53ul)
 
+
+[Story Bible](https://docs.google.com/document/d/15taXRiK_nZUFxZ9W9-CO2CFN0xQnKKP_GfnRXjOSf8s/edit?pli=1)
+
+[Script](https://docs.google.com/document/d/1Qjh23gE_WB8_aal9vJV3sBwLMWVz2FkQeRyzKk_xZLo/edit#)
+
+
 ## Gantt Chart
 https://docs.google.com/spreadsheets/d/1J6GKBTyqIrBM73ZpL0BXzlJh03pcNf9Ylj9XMmmKJmw/edit?usp=sharing
 
