@@ -1,6 +1,6 @@
-# RPG_Group_Project
+# BREACH
 
-**Hacking RPG**
+**About the game**
 
 Text-Based RPG inspired by old pop-culture ideas of hacking! Our game will put the player in the shoes of a hacker who takes on various gigs/quests. Gameplay will involve typical RPG combat, narrative branches, and puzzles in some sort of cyberpunk/sci-fi world.
 Traditional RPG mechanics will also be included! choices, branching narratives, dialogue, skills, abilities, items, factions, and the like are all potential aspects we're looking to add. 
