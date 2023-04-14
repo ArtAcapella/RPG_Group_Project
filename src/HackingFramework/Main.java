@@ -18,9 +18,9 @@ public class Main {
 //		} else if(en<7) {
 //			BlackIce();
 //		} else if (mini == 1) {
-			FragCon();
+			//FragCon();
 //		} else if(mini == 2) {
-//			Overload();
+			Overload();
 //		} else if (mini == 3) {
 //			PasswordHunt();
 //		} else if (mini == 1) {
@@ -121,9 +121,20 @@ public class Main {
 	  }
 	}
 	
-//	public static boolean Overload() {
-//		
-//	}
+	public static void Overload() {
+		Scanner sc = new Scanner(System.in);
+		int level = 1;
+		int press = 0;
+		if (level == 1) {
+			int required = 10000000;
+			String input = sc.nextLine();
+			if (input.length() >= required) {
+				System.out.println("Success!");
+			} else {
+				System.out.println("Fail!");
+			}
+		}
+	}
 //	
 //	public static boolean PasswordHunt() {}
 //	
