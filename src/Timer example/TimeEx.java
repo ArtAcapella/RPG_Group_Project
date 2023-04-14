@@ -1,5 +1,7 @@
 import java.time.LocalTime;
+
 public class TimeEx {
+
 	public static void main(String[] args) {
 		LocalTime start = LocalTime.now();
 		System.out.println("Time starts now!");
@@ -21,9 +23,8 @@ public class TimeEx {
 				System.out.println("Time is up!");
 				break;
 			}
-			
 		}
 
 	}
-	
+
 }
