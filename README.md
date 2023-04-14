@@ -21,7 +21,7 @@ Test Builds:
 
 [Minigame](https://replit.com/@henryD8/CP2077-Hacking#Main.java)
 
-![Screenshot]()
+![Screenshot](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Screen%20Shot%202023-04-14%20at%209.10.01%20AM.png)
 
 [Combat Model](https://replit.com/@henryD8/ZaiCombatTest#Main.java)
 
