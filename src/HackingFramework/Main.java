@@ -1,17 +1,44 @@
 import java.util.*;
+import java.time.LocalTime;
 
 public class Main {
 
 	public static void main(String[] args) {
 		Random rand = new Random();
 		int upperbound = 10;
-		int en = rand.nextInt(upperbound);
+		//int en = rand.nextInt(upperbound);
+		int en = 4;
 		int up = 6;
 //		int mini = rand.nextInt(up);
 		int mini = 1;
 		int level = 1;
 		
-		
+		switch (en){
+		case 1:
+			//Daemon();
+			break;
+		case 2:
+			//BlackIce();
+			break;
+		case 3:
+			FragCon();
+			break;
+		case 4:
+			Overload();
+			break;
+		case 5:
+			//PasswordHunt();
+			break;
+		case 6:
+			//Calculate();
+			break;
+		case 7:
+			//DataTap();
+			break;
+		case 8:
+			//LockPick();
+			break;
+		}
 		
 //		if (en<4) {
 //			Daemon();
@@ -123,17 +150,71 @@ public class Main {
 	
 	public static void Overload() {
 		Scanner sc = new Scanner(System.in);
-		int level = 1;
-		int press = 0;
+		int level = 5;
+		LocalTime start = LocalTime.now();
+		System.out.println("Time starts now!");
+		LocalTime next1 = start.plusMinutes(1);
+		LocalTime next2 = next1.plusMinutes(1);
+		LocalTime next3 = next2.plusMinutes(1);
+		LocalTime next4 = next3.plusMinutes(1);
+		LocalTime next5 = next4.plusMinutes(1);		
+		while(true) {
+			if (LocalTime.now().compareTo(next1) ==0) {
+			System.out.println("You have 4 minutes left.");
+			} else if (LocalTime.now().compareTo(next2) ==0) {
+				System.out.println("You have 3 minutes left.");
+			}else if (LocalTime.now().compareTo(next3) ==0) {
+				System.out.println("You have 2 minutes left.");
+			}else if (LocalTime.now().compareTo(next4) ==0) {
+				System.out.println("You have 1 minutes left.");
+			}else if (LocalTime.now().compareTo(next5) ==0) {
+				System.out.println("Time is up!");
+				break;
+			}
 		if (level == 1) {
-			int required = 10000000;
+			int required = 40;
 			String input = sc.nextLine();
 			if (input.length() >= required) {
 				System.out.println("Success!");
 			} else {
 				System.out.println("Fail!");
 			}
-		}
+		} else if (level == 2){
+      int required = 80;
+			String input = sc.nextLine();
+			if (input.length() >= required) {
+				System.out.println("Success!");
+			} else {
+				System.out.println("Fail!");
+			}
+    } else if (level == 3) {
+      int required = 120;
+			String input = sc.nextLine();
+			if (input.length() >= required) {
+				System.out.println("Success!");
+			} else {
+				System.out.println("Fail!");
+			}
+    } else if (level == 4) {
+      int required = 160;
+			String input = sc.nextLine();
+			if (input.length() >= required) {
+				System.out.println("Success!");
+			} else {
+				System.out.println("Fail!");
+			}
+    } else {
+      int required = 200;
+			String input = sc.nextLine();
+			if (input.length() >= required) {
+				System.out.println("Success!");
+			} else {
+				System.out.println("Fail!");
+			}
+    }
+		
+		
+	}
 	}
 //	
 //	public static boolean PasswordHunt() {}
