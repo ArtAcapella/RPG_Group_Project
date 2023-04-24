@@ -46,8 +46,7 @@ public class Main {
 	}
 
 	// public static boolean Daemon() {}
-	//
-	// public static boolean BlackIce() {}
+	
 
 	// Henry Dunn
 	public static void FragCon() {
@@ -191,8 +190,12 @@ public class Main {
 
 	}
 
-	// public static boolean PasswordHunt() {}
-	//
+	public static void PasswordHunt() {
+		String pword = "Bud";
+		int guess = 0;
+		
+	}
+	
 	// Ethan Reynolds
 	public static void Calculate() {
 		Random rand = new Random();
