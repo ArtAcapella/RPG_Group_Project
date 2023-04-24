@@ -1,3 +1,5 @@
+// Alice Leppert
+
 import java.time.LocalTime;
 
 public class Timer {
