@@ -1,3 +1,5 @@
+// Ethan Reynolds
+
 import java.util.*;
 import java.time.LocalTime;
 
@@ -47,6 +49,7 @@ public class Main {
 	//
 	// public static boolean BlackIce() {}
 
+	// Henry Dunn
 	public static void FragCon() {
 		int ICElvl = 1;
 		int toBeatICE = 1;
@@ -138,6 +141,7 @@ public class Main {
 		}
 	}
 
+	// Ethan Reynolds
 	public static void Overload() {
 		Timer t1 = new Timer();
 		Scanner sc = new Scanner(System.in);
@@ -189,6 +193,7 @@ public class Main {
 
 	// public static boolean PasswordHunt() {}
 	//
+	// Ethan Reynolds
 	public static void Calculate() {
 		Random rand = new Random();
 		Scanner sc = new Scanner(System.in);
