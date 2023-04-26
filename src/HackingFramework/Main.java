@@ -2,6 +2,7 @@
 
 import java.util.*;
 import java.time.LocalTime;
+import java.io.*;
 
 public class Main {
 
@@ -10,7 +11,7 @@ public class Main {
 		int upperbound = 10;
 
 		// int en = rand.nextInt(upperbound);
-		int en = 6;
+		int en = 5;
 		int up = 6;
 		// int mini = rand.nextInt(up);
 		int mini = 1;
@@ -30,7 +31,7 @@ public class Main {
 			Overload();
 			break;
 		case 5:
-			// PasswordHunt();
+			PasswordHunt();
 			break;
 		case 6:
 			Calculate();
@@ -46,7 +47,6 @@ public class Main {
 	}
 
 	// public static boolean Daemon() {}
-	
 
 	// Henry Dunn
 	public static void FragCon() {
@@ -190,12 +190,47 @@ public class Main {
 
 	}
 
+	// Ethan Reynolds
 	public static void PasswordHunt() {
-		String pword = "Bud";
+		Scanner sc = new Scanner(System.in);
+		String pwrd = "Bud";
 		int guess = 0;
+		boolean play = true;
+		try {
+			File docs = new File("Docs.txt");
+			BufferedReader br = new BufferedReader(new FileReader(docs));
+			String sr;
+			while ((sr = br.readLine()) != null) {
+				System.out.println(sr);
+				br.close();
+			}
+		}
 		
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		while (play == true) {
+			if (guess <= 4) {
+				String g = sc.nextLine();
+				if (g.equals(pwrd)) {
+					guess++;
+					if (guess == 1) {
+						System.out.println("Nice! You goot it! It took you " + guess + " guess.");
+					} else {
+						System.out.println("Nice! You goot it! It took you " + guess + " guesses.");
+					}
+				} else {
+					System.out.println("Wrong! Try again!");
+					guess++;
+				}
+			} else {
+				play = false;
+			}
+		}
+		System.out.println("You are out of guesses. You Lose!");
 	}
-	
+
 	// Ethan Reynolds
 	public static void Calculate() {
 		Random rand = new Random();
@@ -254,7 +289,7 @@ public class Main {
 					play = false;
 				}
 			} else if (level == 4) {
-				float ans = a/b;
+				float ans = a / b;
 				System.out.println(a + "÷" + b + "= ?\nSolve.");
 				float input = sc.nextFloat();
 				if (input == ans) {
