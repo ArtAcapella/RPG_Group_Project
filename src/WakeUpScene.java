@@ -19,7 +19,7 @@ public class WakeUpScene {
 		int r = rand.nextInt(0,7);
 		System.out.println("It looks like a "+weather[r]+" day. The glitchy window has opened itself in the night again and "+incon[r]+" is flowing into the room again.");
 		System.out.println("Your newly refilled immunoblockers sit on the bedside table.");
-		// taken from Character_Building_BetaPhase by Henry Dunn and buffed by Alice Leppert
+		// taken from Character_Building_BetaPhase by Henry Dunn and revamped by Alice Leppert
 		while (true) {
 	    System.out.println("Press 1: close window\nPress 2: go back to sleep\nPress 3. take blockers");
 	    int moveChoice = sc.nextInt();
@@ -31,9 +31,9 @@ public class WakeUpScene {
 	      } if(moveChoice==2) {
 	        System.out.println("Its not worth getting out of bed right now... you fall back asleep.");
 	        try {
-				TimeUnit.SECONDS.sleep(1);
+				TimeUnit.SECONDS.sleep(2);
 				System.out.println("...");
-				TimeUnit.SECONDS.sleep(1);
+				TimeUnit.SECONDS.sleep(2);
 				System.out.println("You wake up again, the window is still open.");  
 	        } catch (InterruptedException e) {
 				e.printStackTrace();
@@ -45,45 +45,79 @@ public class WakeUpScene {
 	        }    
 	    }
 		// Alice Leppert
-		System.out.println("Would you like breakfast? y/n");
-		if(sc.nextLine().equalsIgnoreCase("yes") || sc.nextLine().equalsIgnoreCase("y")) {
-			System.out.println("Current Coyn:"+coyn);
-			System.out.println("Please Select One:");
-			System.out.println("Get a BARR (1 coyn) [No benefit]");
-			System.out.println("Water (1 coyn) [No benefit]");
-			System.out.println("Get Noodles (3 coyn) [+1 HP]");
-			System.out.println("Get Cinnamon Onigiri (5 coyn) [+1 Booksmarts]");
-			System.out.println("Get Syrnyky (20 coyn) [+1 buff, +1 quick, +1 cool]");
-			System.out.println("Get Breakfast Platter (30 coyn) [+8 HP]");
-			System.out.println("Get Wagyu Meal (100 coyn) [+10 HP, +1 to all stats]");
-			System.out.println("Get a 10-Course Breakfast (500 coyn) [+15 HP, +2 to all stats]");			
+		while (true) {
+		System.out.println("You hear you stomach rumble. It's time for breakfast.");
+		System.out.println("Current Coyn:"+coyn);
+		System.out.println("Please Select One:");
+		System.out.println("Press 1: Get a BARR (1 coyn) [No benefit]");
+		System.out.println("Press 2: Water (1 coyn) [No benefit]");
+		System.out.println("Press 3: Get Noodles (3 coyn) [+1 HP]");
+		System.out.println("Press 4: Get Cinnamon Onigiri (5 coyn) [+1 Booksmarts]");
+		System.out.println("Press 5: Get Syrnyky (20 coyn) [+1 buff, +1 quick, +1 cool]");
+		System.out.println("Press 6: Get Breakfast Platter (30 coyn) [+8 HP]");
+		System.out.println("Press 7: Get Wagyu Meal (100 coyn) [+10 HP, +1 to all stats]");
+		System.out.println("Press 8: Get a 10-Course Breakfast (500 coyn) [+15 HP, +2 to all stats]");			
 		int bf = sc.nextInt();
 		switch(bf) {
 		case 1: 
+			if (coyn<1) {
+				System.out.println("Sorry you don't have enough money for that!");
+				continue;
+			} else {
 			coyn -= 1;
 			break;
+			}
 		case 2: 
+			if (coyn<1) {
+			System.out.println("Sorry you don't have enough money for that!");
+			continue;
+		} else {
 			coyn -= 1;
 			break;
+		}
 		case 3: 
+			if (coyn<3) {
+			System.out.println("Sorry you don't have enough money for that!");
+			continue;
+		} else {
 			hp += 1;
 			coyn -=3;
 			break;
+		}
 		case 4: 
+			if (coyn<5) {
+				System.out.println("Sorry you don't have enough money for that!");
+				continue;
+			} else {
 			aBookS += 1;
 			coyn -= 5;
 			break;
+			}
 		case 5:
+			if (coyn<20) {
+				System.out.println("Sorry you don't have enough money for that!");
+				continue;
+			} else {
 			aBuff += 1;
 			aQuick += 1;
 			aCool += 1;
 			coyn -= 20;
 			break;
+			}
 		case 6: 
+			if (coyn<30) {
+				System.out.println("Sorry you don't have enough money for that!");
+				continue;
+			} else {
 			hp += 8;
 			coyn -=30;
 			break;
+			}
 		case 7: 
+			if (coyn<100) {
+				System.out.println("Sorry you don't have enough money for that!");
+				continue;
+			} else {
 			hp += 10;
 			aBuff += 1;
 			aQuick += 1;
@@ -95,7 +129,12 @@ public class WakeUpScene {
 			aCool += 1;
 			coyn -= 100;
 			break;
+			}
 		case 8: 
+			if (coyn<500) {
+				System.out.println("Sorry you don't have enough money for that!");
+				continue;
+			} else {
 			hp += 15;
 			aBuff += 2;
 			aQuick += 2;
@@ -107,13 +146,11 @@ public class WakeUpScene {
 			aCool += 2;
 			coyn -= 500;
 			break;
+			}
 		}
-		System.out.println("Your skills and coyn have been updated!");
-		} else if (sc.nextLine().equalsIgnoreCase("n") || sc.nextLine().equalsIgnoreCase("no")){
-			System.out.println("this is where the next question/quest goes. Make sure to connect methods");
-		} else {
-			System.out.println("ERROR: Unknown Command");
-		}
+		
+		
 		sc.close();// may have to take away later
+	}
 	}
 }
