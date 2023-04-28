@@ -29,7 +29,7 @@ Test Builds:
 [Character Creation](https://replit.com/@henryD8/CharacterBuildingBetaPhase#Main.java)
 
 [Combat Gameplay](https://replit.com/@henryD8/ZaiCombatTest)
-![Screenshot]()
+![Screenshot](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Screen%20Shot%202023-04-28%20at%209.14.12%20AM.png)
 
 ## Logic Flow Diagram:
 
