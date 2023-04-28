@@ -28,6 +28,9 @@ Test Builds:
 
 [Character Creation](https://replit.com/@henryD8/CharacterBuildingBetaPhase#Main.java)
 
+[Combat Gameplay](https://replit.com/@henryD8/ZaiCombatTest)
+![Screenshot]()
+
 ## Logic Flow Diagram:
 
 ![Logic Flow Diagram](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/MainGame.drawio.png?raw=true)
