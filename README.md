@@ -2,8 +2,9 @@
 
 **About the game**
 
-Text-Based RPG inspired by old pop-culture ideas of hacking! Our game will put the player in the shoes of a hacker who takes on various gigs/quests. Gameplay will involve typical RPG combat, narrative branches, and puzzles in some sort of cyberpunk/sci-fi world.
+Welcome to BREACH! A text-based RPG that was inspired by old pop-culture ideas of hacking! Our game will put the player in the shoes of a hacker who takes on various gigs/quests. Gameplay will involve typical RPG combat, narrative branches, easter eggs, and puzzles in a cyberpunk/sci-fi world.
 Traditional RPG mechanics will also be included! choices, branching narratives, dialogue, skills, abilities, items, factions, and the like are all potential aspects we're looking to add. 
+So what are you waiting for? Play BREACH now!
 
 ![image](https://user-images.githubusercontent.com/111773778/194080799-3e374537-3adb-49a0-a71e-6b96d9c2d959.png)
 ![image](https://user-images.githubusercontent.com/111773778/194082045-cb49db3f-09c2-40eb-9f95-8fe23d39125e.png)
