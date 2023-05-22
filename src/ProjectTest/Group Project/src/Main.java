@@ -6,8 +6,7 @@ import java.lang.Thread;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out
-				.println("Welcome to Breach!\nYou are a hacker in the future and you will need to hack to stay alive?");
+		System.out.println("Welcome to Breach!\nYou are a hacker in the future and you will need to hack to stay alive?");
 		System.out.println("Group Members: Henry Dunn, Alice Leppert, Ethan Reynolds, Mike Torianyk, and Soonhwi Kwon");
 		System.out.println("To start the game, press 1");
 		Scanner sc = new Scanner(System.in);
