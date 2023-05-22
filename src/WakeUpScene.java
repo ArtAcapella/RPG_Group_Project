@@ -1,15 +1,12 @@
-
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class WakeUpScene {
 
-	public static void main(String[] args) {
-		int imBlockers = 0;
-		int hp= 0, aBuff= 0, aQuick= 0, aTech= 0, aHacking= 0, aBookS= 0, aStreetS= 0, aDealing = 0, aCool = 0, coyn = 0;
-		WakeUp(imBlockers,hp, aBuff, aQuick, aTech, aHacking, aBookS, aStreetS, aDealing, aCool, coyn);
+//	public static void main(String[] args) {
+//		int imBlockers;
+//		int hp, aBuff, aQuick, aTech, aHacking, aBookS, aStreetS, aDealing, aCool, coyn;
 
-	}
 	// made by Alice Leppert 4/24/23
 	public static void WakeUp(int imBlockers,int hp,int aBuff,int aQuick,int aTech,int aHacking,int aBookS,int aStreetS,int aDealing,int aCool,int coyn) {
 		String[] weather = {"cloudy", "sunny","rainy","windy","snowy","dangerous","wet"};
@@ -42,26 +39,26 @@ public class WakeUpScene {
 	        System.out.println("You tap your thumb on the small dispenser and two pills pop out, you down both of them.");
 	        imBlockers = imBlockers + 10;
 	        break;
-	        }    
+	        }
 	    }
 		// Alice Leppert
 		while (true) {
 		System.out.println("You hear you stomach rumble. It's time for breakfast.");
-		System.out.println("Current Coyn:"+coyn);
+		System.out.println("Coyn in Account: "+coyn);
 		System.out.println("Please Select One:");
-		System.out.println("Press 1: Get a BARR (1 coyn) [No benefit]");
-		System.out.println("Press 2: Water (1 coyn) [No benefit]");
-		System.out.println("Press 3: Get Noodles (3 coyn) [+1 HP]");
-		System.out.println("Press 4: Get Cinnamon Onigiri (5 coyn) [+1 Booksmarts]");
+		System.out.println("Press 1: Get a BARR (5 coyn) [No benefit]");
+		System.out.println("Press 2: Water (5 coyn) [No benefit]");
+		System.out.println("Press 3: Get Noodles (10 coyn) [+1 HP]");
+		System.out.println("Press 4: Get Cinnamon Onigiri (10 coyn) [+1 Booksmarts]");
 		System.out.println("Press 5: Get Syrnyky (20 coyn) [+1 buff, +1 quick, +1 cool]");
-		System.out.println("Press 6: Get Breakfast Platter (30 coyn) [+8 HP]");
-		System.out.println("Press 7: Get Wagyu Meal (100 coyn) [+10 HP, +1 to all stats]");
-		System.out.println("Press 8: Get a 10-Course Breakfast (500 coyn) [+15 HP, +2 to all stats]");			
+		System.out.println("Press 6: Get Breakfast Platter (30 coyn) [+5 HP]");
+		System.out.println("Press 7: Get Wagyu Meal (100 coyn) [+10 HP, +4 to all stats]");
+		System.out.println("Press 8: Get a 10-Course Breakfast (500 coyn) [+15 HP, +10 to all stats]");			
 		int bf = sc.nextInt();
 		switch(bf) {
 		case 1: 
 			if (coyn<1) {
-				System.out.println("Sorry you don't have enough money for that!");
+				System.out.println("A cheerful electronic voice eminates from the machine: Sorry you don't have enough money for that!");
 				continue;
 			} else {
 			coyn -= 1;
@@ -69,7 +66,7 @@ public class WakeUpScene {
 			}
 		case 2: 
 			if (coyn<1) {
-			System.out.println("Sorry you don't have enough money for that!");
+			System.out.println("A cheerful electronic voice eminates from the machine: Sorry you don't have enough money for that!");
 			continue;
 		} else {
 			coyn -= 1;
@@ -77,7 +74,7 @@ public class WakeUpScene {
 		}
 		case 3: 
 			if (coyn<3) {
-			System.out.println("Sorry you don't have enough money for that!");
+			System.out.println("A cheerful electronic voice eminates from the machine: Sorry you don't have enough money for that!");
 			continue;
 		} else {
 			hp += 1;
@@ -86,7 +83,7 @@ public class WakeUpScene {
 		}
 		case 4: 
 			if (coyn<5) {
-				System.out.println("Sorry you don't have enough money for that!");
+				System.out.println("A cheerful electronic voice eminates from the machine: Sorry you don't have enough money for that!");
 				continue;
 			} else {
 			aBookS += 1;
@@ -95,7 +92,7 @@ public class WakeUpScene {
 			}
 		case 5:
 			if (coyn<20) {
-				System.out.println("Sorry you don't have enough money for that!");
+				System.out.println("A cheerful electronic voice eminates from the machine: Sorry you don't have enough money for that!");
 				continue;
 			} else {
 			aBuff += 1;
@@ -106,7 +103,7 @@ public class WakeUpScene {
 			}
 		case 6: 
 			if (coyn<30) {
-				System.out.println("Sorry you don't have enough money for that!");
+				System.out.println("A cheerful electronic voice eminates from the machine: Sorry you don't have enough money for that!");
 				continue;
 			} else {
 			hp += 8;
@@ -115,7 +112,7 @@ public class WakeUpScene {
 			}
 		case 7: 
 			if (coyn<100) {
-				System.out.println("Sorry you don't have enough money for that!");
+				System.out.println("A cheerful electronic voice eminates from the machine: Sorry you don't have enough money for that!");
 				continue;
 			} else {
 			hp += 10;
@@ -132,7 +129,7 @@ public class WakeUpScene {
 			}
 		case 8: 
 			if (coyn<500) {
-				System.out.println("Sorry you don't have enough money for that!");
+				System.out.println("A cheerful electronic voice eminates from the machine: Sorry you don't have enough money for that!");
 				continue;
 			} else {
 			hp += 15;
@@ -149,8 +146,8 @@ public class WakeUpScene {
 			}
 		}
 		
-		
-		sc.close();// may have to take away later
+		break;
+		//sc.close();// may have to take away later
 	}
 	}
 }
