@@ -44,9 +44,6 @@ class Combat {
     */
     
     //have a CLASS for attackCheck
-    
-  //[1am all-nighter stress comment] Seriously, did you think this was finished??? Theres no way we can use this in its current state. I know i said i would fill in the move details but there still needs to be the actuall COMBAT those moves occur in.
-    //I tried finding a way to put this in but Ive got 7 hours before this needs to be presented and I cant code the whole combat system AND get enough sleep to safely drive to school in that time.
 
     if (moveChoice.equals("assess")) {
       if (aEyes < 5 ) {
