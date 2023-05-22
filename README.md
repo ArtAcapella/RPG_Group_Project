@@ -27,6 +27,7 @@ Test Builds:
 ![Screenshot](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Screen%20Shot%202023-04-14%20at%209.10.01%20AM.png)
 
 [Character Creation](https://replit.com/@henryD8/CharacterBuildingBetaPhase#Main.java)
+![Screenshot](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Screenshot%202023-05-21%208.31.10%20PM.png)
 
 [Combat Gameplay](https://replit.com/@henryD8/ZaiCombatTest)
 ![Screenshot](https://github.com/ArtAcapella/RPG_Group_Project/blob/main/images/Screen%20Shot%202023-04-28%20at%209.14.12%20AM.png)
