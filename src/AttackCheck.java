@@ -61,7 +61,7 @@ public class AttackCheck {
 		} else if (attackName.equalsIgnoreCase("railgun")) {
 			damage = buff/4 + quick/5 + tech/5;
 			
-		} else if (attackName.equalsIgnoreCase("flamepalm")) {	
+		} else if (attackName.equalsIgnoreCase("sledge arm")) {	
 			damage = buff/6 + quick/4 + tech/4;
 			
 		} else if (attackName.equalsIgnoreCase("grenade")) {	
