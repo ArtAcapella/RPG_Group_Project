@@ -1,6 +1,7 @@
 # BREACH
 
 **About the game**
+
 Creators: Henry Dunn, Ethan Reynolds, Alice Leppert, Mike Torianyk, Soonhwi Kwon
 
 You, a misfortunate hacker, hold the key to a staggering text-based RPG adventure in the pulsing cyberpunk world of "BREACH," so get ready to dive into one hell of an adventure. Every action you take in this perilous environment is a calculated cost for survival, putting your unshakeable will to always act morally—regardless of the alluring rewards that await you—to the test. Develop your abilities and work toward being the ultimate master hacker as you make your way through this dangerous adventure, buying the medication you need and battling your own illness before it takes your life. Do you have what it takes to survive and become the greatest hacker of all time?
