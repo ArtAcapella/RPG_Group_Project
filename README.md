@@ -2,9 +2,7 @@
 
 **About the game**
 
-Immerse yourself in the dark and thrilling cyberpunk universe of 'BREACH,' the ultimate text-based RPG. Become a master hacker in a futuristic world teeming with high-stakes heists, relentless corporations, and mind-bending technology. Engage in exhilarating cyber battles, solve intricate puzzles, and navigate treacherous virtual landscapes. With its immersive storytelling, gripping mini-games, and a richly detailed cyberpunk setting, 'BREACH' offers an unforgettable journey through a world where every choice has consequences and the line between humanity and technology blurs.
 
-Embark on a journey through this thrilling cyberpunk universe of 'BREACH,' a text-based RPG filled with immersive storytelling, girrping mini-games, and adrenaline-rushed battles. Become one of the greatest hackers and create new bonds with unique characters.
 
 ![image](https://user-images.githubusercontent.com/111773778/194080799-3e374537-3adb-49a0-a71e-6b96d9c2d959.png)
 ![image](https://user-images.githubusercontent.com/111773778/194082045-cb49db3f-09c2-40eb-9f95-8fe23d39125e.png)
