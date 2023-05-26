@@ -36,50 +36,53 @@ class Combat {
 		boolean play = true;
 		String move = "ace";
 		int aMoves = aQuick / 5;
-		int eMoves = enemy.getQuick / 5;
+		int enMoves = enemy.getQuick();
+		int eMoves = enMoves / 5;
 		int moves = 0;
-		String moveChoice = "";
+		String moveChoice = "ace";
 
 		while (play == true) {
-			if (move = "ace") {
+			if (move == "ace") {
 				if (moveChoice.equals("assess")) {
 					moves++;
 					if (aEyes < 5) {
-						System.out.println(weakPoint1);
+						// System.out.println(weakPoint1);
 					} else if (aEyes < 10) {
-						System.out.println(weakPoint2);
+						// System.out.println(weakPoint2);
 					} else if (aEyes < 15) {
-						System.out.println(weakPoint3);
+						// System.out.println(weakPoint3);
 					} else {
-						System.out.println(weakPoint4);
+						// System.out.println(weakPoint4);
 					}
 				} else if (moveChoice.equals("talk")) {
 					moves++;
-					int anger = enemy.hpMAX - hp;
+					int hpMax = enemy.getHPMAX();
+					int anger = hpMax - aHP;
 					if (anger < 10 || anger > 25) {
 						System.out.println("Success!");
 					} else {
 						System.out.println("Fail");
-						enemy.Buff += 5;
+						int eBuff = enemy.getBuff();
+						eBuff += 5;
 					}
 				} else if (moveChoice.equals("dodge")) {
 					moves++;
 					aACnow = aBaseAC + aDodge / 2;
 				} else if (moveChoice.equals("Flee")) {
 					moves++;
-					if (aQuick < enemy.getQuick) {
+					if (aQuick < enemy.getQuick()) {
 						System.out.println("Fail");
 					} else {
 						System.out.println("Success!");
 					}
 				} else if (moveChoice.equals("Trip")) {
 					moves++;
-					if (aQuick + aBuff < enemy.getQuick + enemy.getBuff) {
+					if (aQuick + aBuff < enemy.getQuick() + enemy.getBuff()) {
 					}
 				} else if (moveChoice.equals("Grapple")) {
 					moves++;
 
-				} else if (moveChoice.equal("breakICE")) {
+				} else if (moveChoice.equals("breakICE")) {
 					moves++;
 
 				}
@@ -89,10 +92,9 @@ class Combat {
 					moves = 0;
 				}
 
-			} else if (move = "enemy") {
+			} else if (move == "enemy") {
 				double h = enemyACnow / enemy.baseAC;
-				if (h) {
-				}
+				// if (h) {}
 				if (moves > eMoves) {
 					move = "ace";
 					moves = 0;
