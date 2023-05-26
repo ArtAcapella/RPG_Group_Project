@@ -1,4 +1,4 @@
-public class characterAce {
+public class CharacterAce {
 	protected int sts, bos, qck, buf, tech, eyes, cool, lck, chrm, ice, inl, hst, hck, corp, str, snk;
 	protected boolean laug, haug, remhk;
 
@@ -8,7 +8,7 @@ public class characterAce {
 	 * intelligence; hst - history; hck - hack; corp - corporate; snk - sneak; laug
 	 * - leg augment; haug - hand augment; remhk - remote hacking; str - strength
 	 */
-	characterAce(int buf, int qck, int tech, int hck, int bos, int sts, int eyes, int cool, int chrm, int snk) {
+	CharacterAce(int buf, int qck, int tech, int hck, int bos, int sts, int eyes, int cool, int chrm, int snk) {
 		this.sts = sts;
 		this.bos = bos;
 		this.qck = qck;
