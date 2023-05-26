@@ -25,20 +25,19 @@ public class Clinic {
 		this.aHPmax = aHPmax;
 		this.aEyes = aEyes;
 		this.aSneak = aSneak;
-		
+
 		int aHP = aHPmax;
 
 		int moves = 10 + aBuff;
 		String isu = " ";
 		Random rand = new Random();
-		
-		//Hacking Variables
+
+		// Hacking Variables
 		Hacking h1 = new Hacking();
 		boolean jackedIn = true;
 		int floor = 1;
 		int type = 1;
 		int delve = 0;
-	    
 
 		/*
 		 * sts - street smarts; bos - book smarts; qck - quick; buf - buff; tech - tech;
@@ -46,7 +45,8 @@ public class Clinic {
 		 * intelligence; hst - history; hck - hack; corp - corporate; snk - sneak; laug
 		 * - leg augment; haug - hand augment; remhk - remote hacking; str - strength
 		 */
-	    characterAce ace = new characterAce(aBuff, aQuick, aTech, aHacking, aBookSmarts, aStreetSmarts, aEyes, aCool, aCharm, aSneak); 
+		characterAce ace = new characterAce(aBuff, aQuick, aTech, aHacking, aBookSmarts, aStreetSmarts, aEyes, aCool,
+				aCharm, aSneak);
 		List<String> inventory = new ArrayList<String>();
 
 		Scanner ent = new Scanner(System.in);
@@ -133,7 +133,7 @@ public class Clinic {
 			} else if (c.equalsIgnoreCase("nailed down")) {
 				moves--;
 				if (ace.str > 12) {
-					
+
 					System.out.println(
 							"You pull the chair up from the ground. The panel adjacent to it flies open by accident, revealing a hidden room beneath. It seems like the room was hastily vacated recently, judging by the cluttered piles of things desperately tossed into the secret space. Within this room you find an active port, Rhyz must have forgotten to log out of this Net. You could jack in if you wish. You could also just leave a note");
 					boolean hasRhyzChair = true;
@@ -159,79 +159,85 @@ public class Clinic {
 					}
 				}
 			} else if (c.equalsIgnoreCase("jack into net")) {
-				
+
 				moves--;
-	              jackedIn = true;
-	              floor = 1;
-			              while (jackedIn) {
-			              System.out.println("Currently on floor " + floor + ". \nDIVE? [y/n]");
-			              isu = ent.nextLine();
-			              if (isu.equalsIgnoreCase("y")) {
-			            	  //Selecting Encounter
-			            	  int encounter = rand.nextInt(9)+ floor;
-			            	  if (encounter <= 8) {
-			            		  System.out.println("No hostile entities on this floor.");
-			            	  } else if (encounter <= 20) {
-			            		  System.out.println("BLACK ICE DETECTED. BEGINING ICEPICK. FAILURE WILL LIKELY RESULT IN AN OVERLOAD");
-			            		  if (type == 1) {
-					            		 delve = h1.FragCon(floor, aHacking);
-					            	  } else if (type == 2) {
-					            		  delve = h1.Overload(floor, aHacking);
-					            	  } else if (type == 3) {
-					            		  delve = h1.PasswordHunt(floor, aHacking);
-					            	  } else if (type == 4) {
-					            		  delve = h1.Calculate(floor, aHacking);
-					            	  }
-			            		  if (delve == 0) {
-			            			  System.out.println("You feel the black ICE begin to seep into your system. The pain is overwhelming and you black out. Once you come to, its been a few hours and you're on the edge of a deadly immune response.");
-			            			  jackedIn = false;
-			            			  aHP = 0;
-			            			  moves = 1;
-			            		  }
-			            	  } else if (encounter >= 11) {
-			            		  //DAEMON fight
-			            	  } else if (encounter >= 15) {
-			            		  //Hostile Netrunner
-			            	  }
-			            	  
-			            	  type = rand.nextInt(4) + 1;
-			            	  if (type == 1) {
-			            		  delve = h1.FragCon(floor, aHacking);
-			            	  } else if (type == 2) {
-			            		  delve = h1.Overload(floor, aHacking);
-			            	  } else if (type == 3) {
-			            		  delve = h1.PasswordHunt(floor, aHacking);
-			            	  } else if (type == 4) {
-			            		  delve = h1.Calculate(floor, aHacking);
-			            	  }
-			            	  if (delve <= 0) {
-			            		  System.out.println("TRACE AT CRITICAL. EXIT NOW BEFORE DAMAGE BECOMES MORE SEVERE.");
-			            		  aHP -= 5;
-			            		  jackedIn = false;
-			            	  } else {
-			            		  floor += delve;
-			            	  }
-			              } else if (isu.equalsIgnoreCase("n")) {
-			            	  System.out.println("SCRUBBING TRACE... DISCONECTING...");
-			            	  jackedIn = false;
-			              }
-			              
-			              
-			              }
-			              
-			            //Netrun rewards
-			              if (floor >=3) {
-			            	  System.out.println("There are messages on the early floor. Several that came through around the time you walked into this building. They’re encrypted, but you can make out that they were warnings of some sort");
-			              } if (floor >=5) {
-			            	  System.out.println("There's another Net architecture connected to this one, judging by the pings its somewhere in this room.");
-			            	  if (ace.bos >= 8) {
-			            		  System.out.println("Base record data seems to indicate that right before leaving, whoever was here before I arrived pressed the red button on the Chair four times and then pulled the adjustment lever.");
-			            	  }
-			              } if (floor >=10) {
-			            	  System.out.println("You find the ghosts of messages long since deleted, but not effectively scrubbed. They describe something called “Sunray,” which appears to be an underground AI development team. They’re connected to MageLan somehow, judging from how often the two words appear in allied texts. The  person named Mori seemingly knows more about both of this. Rhyz seems to only be connected to Mori, not MageLan or Sunray..");
-			              }
-			              
-				
+				jackedIn = true;
+				floor = 1;
+				while (jackedIn) {
+					System.out.println("Currently on floor " + floor + ". \nDIVE? [y/n]");
+					isu = ent.nextLine();
+					if (isu.equalsIgnoreCase("y")) {
+						// Selecting Encounter
+						int encounter = rand.nextInt(9) + floor;
+						if (encounter <= 8) {
+							System.out.println("No hostile entities on this floor.");
+						} else if (encounter <= 20) {
+							System.out.println(
+									"BLACK ICE DETECTED. BEGINING ICEPICK. FAILURE WILL LIKELY RESULT IN AN OVERLOAD");
+							if (type == 1) {
+								delve = h1.FragCon(floor, aHacking);
+							} else if (type == 2) {
+								delve = h1.Overload(floor, aHacking);
+							} else if (type == 3) {
+								delve = h1.PasswordHunt(floor, aHacking);
+							} else if (type == 4) {
+								delve = h1.Calculate(floor, aHacking);
+							}
+							if (delve == 0) {
+								System.out.println(
+										"You feel the black ICE begin to seep into your system. The pain is overwhelming and you black out. Once you come to, its been a few hours and you're on the edge of a deadly immune response.");
+								jackedIn = false;
+								aHP = 0;
+								moves = 1;
+							}
+						} else if (encounter >= 11) {
+							// DAEMON fight
+						} else if (encounter >= 15) {
+							// Hostile Netrunner
+						}
+
+						type = rand.nextInt(4) + 1;
+						if (type == 1) {
+							delve = h1.FragCon(floor, aHacking);
+						} else if (type == 2) {
+							delve = h1.Overload(floor, aHacking);
+						} else if (type == 3) {
+							delve = h1.PasswordHunt(floor, aHacking);
+						} else if (type == 4) {
+							delve = h1.Calculate(floor, aHacking);
+						}
+						if (delve <= 0) {
+							System.out.println("TRACE AT CRITICAL. EXIT NOW BEFORE DAMAGE BECOMES MORE SEVERE.");
+							aHP -= 5;
+							jackedIn = false;
+						} else {
+							floor += delve;
+						}
+					} else if (isu.equalsIgnoreCase("n")) {
+						System.out.println("SCRUBBING TRACE... DISCONECTING...");
+						jackedIn = false;
+					}
+
+				}
+
+				// Netrun rewards
+				if (floor >= 3) {
+					System.out.println(
+							"There are messages on the early floor. Several that came through around the time you walked into this building. They’re encrypted, but you can make out that they were warnings of some sort");
+				}
+				if (floor >= 5) {
+					System.out.println(
+							"There's another Net architecture connected to this one, judging by the pings its somewhere in this room.");
+					if (ace.bos >= 8) {
+						System.out.println(
+								"Base record data seems to indicate that right before leaving, whoever was here before I arrived pressed the red button on the Chair four times and then pulled the adjustment lever.");
+					}
+				}
+				if (floor >= 10) {
+					System.out.println(
+							"You find the ghosts of messages long since deleted, but not effectively scrubbed. They describe something called “Sunray,” which appears to be an underground AI development team. They’re connected to MageLan somehow, judging from how often the two words appear in allied texts. The  person named Mori seemingly knows more about both of this. Rhyz seems to only be connected to Mori, not MageLan or Sunray..");
+				}
+
 			} else if (c.equalsIgnoreCase("Wait in the room")) {
 				moves--;
 				int waitedRounds = 0;
@@ -249,10 +255,13 @@ public class Clinic {
 						break;
 					}
 				}
-				System.out.println("You recive a call from an unknown ID...\n and thats all of the script we've translated into code so far! hope you liked it, and congrats on reaching this far considering this is probably a buggy mess and also a very difficult puzzle game. So, yay! please tell Kaptie we did good so we dont lose our GPAs right before we graduate!");
+				System.out.println(
+						"You recive a call from an unknown ID...\n and thats all of the script we've translated into code so far! hope you liked it, and congrats on reaching this far considering this is probably a buggy mess and also a very difficult puzzle game. So, yay! please tell Kaptie we did good so we dont lose our GPAs right before we graduate!");
 			} else if (c.equalsIgnoreCase("leave room")) {
-				System.out.println("You return home to sell off the gear you've collected and refill your blockers. You're just about to go to sleep when something odd happens.");
-				System.out.println("You recive a call from an unknown ID...\n and thats all of the script we've translated into code so far! hope you liked it, and congrats on reaching this far considering this is probably a buggy mess and also a very difficult puzzle game. So, yay! please tell Kaptie we did good so we dont lose our GPAs right before we graduate!");
+				System.out.println(
+						"You return home to sell off the gear you've collected and refill your blockers. You're just about to go to sleep when something odd happens.");
+				System.out.println(
+						"You recive a call from an unknown ID...\n and thats all of the script we've translated into code so far! hope you liked it, and congrats on reaching this far considering this is probably a buggy mess and also a very difficult puzzle game. So, yay! please tell Kaptie we did good so we dont lose our GPAs right before we graduate!");
 
 			} else {
 				System.out.println("Invalid Input");
