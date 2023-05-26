@@ -6,7 +6,12 @@ import java.io.*;
 
 public class Hacking {
 
+	public Hacking() {
+	}
+
 	// Henry Dunn
+	// There are fragments of words that you have tp put together to form fragments.
+	// As the levels get harder, you need to from more fragments.
 	public static int FragCon(int level, int aHacking) {
 		int ICElvl = level;
 		int toBeatICE = 1;
@@ -107,6 +112,9 @@ public class Hacking {
 	}
 
 	// Ethan Reynolds + Henry Dunn
+	// This is the game where you smash your keyboard and you need to press a
+	// certain number of characters to move on.
+	// You need to get more characters every level.
 	public static int Overload(int level, int aHacking) {
 //			Timer t1 = new Timer();
 		LocalTime start = LocalTime.now();
@@ -183,6 +191,10 @@ public class Hacking {
 	}
 
 	// Ethan Reynolds + Henry
+	// This game displays some information that you find by hacking into someone's
+	// phone.
+	// You need to use this information to guess the password.
+	// There are different levels with different passwords.
 	public static int PasswordHunt(int level, int aHacking) {
 		Scanner sc = new Scanner(System.in);
 		String pwrd = "Bud";
@@ -191,8 +203,6 @@ public class Hacking {
 		int guess = 0;
 		boolean play = true;
 		try {
-			// [1AM all-nighter anger comment] REALLY? ONE DOC? THATS ALL YOU COULD DO???
-			// YOU REALIZE THERE NEEDS TO BE VARIATIONS OF THIS, RIGHT?!?!?!??!
 			File docs = new File("Docs.txt");
 			BufferedReader br = new BufferedReader(new FileReader(docs));
 			String sr;
@@ -253,6 +263,8 @@ public class Hacking {
 	}
 
 	// Ethan Reynolds
+	// This displays a math equation that you need to solve.
+	// It gets harder when the level gets higher.
 	public static int Calculate(int level, int aHacking) {
 
 		Random rand = new Random();
