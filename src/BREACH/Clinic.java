@@ -45,7 +45,7 @@ public class Clinic {
 		 * intelligence; hst - history; hck - hack; corp - corporate; snk - sneak; laug
 		 * - leg augment; haug - hand augment; remhk - remote hacking; str - strength
 		 */
-		characterAce ace = new characterAce(aBuff, aQuick, aTech, aHacking, aBookSmarts, aStreetSmarts, aEyes, aCool,
+		CharacterAce ace = new CharacterAce(aBuff, aQuick, aTech, aHacking, aBookSmarts, aStreetSmarts, aEyes, aCool,
 				aCharm, aSneak);
 		List<String> inventory = new ArrayList<String>();
 
